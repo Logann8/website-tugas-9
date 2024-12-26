@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediksi Penjualan Samsung</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Simulasi Prediksi Penjualan Samsung</h1>
+        <nav>
+            <ul>
+                <li><a href="#beranda" onclick="showTab('beranda')">Beranda</a></li>
+                <li><a href="#data-samsung" onclick="showTab('data-samsung')">Data Samsung</a></li>
+                <li><a href="#monte-carlo" onclick="showTab('monte-carlo')">Monte Carlo</a></li>
+                <li><a href="#hasil-prediksi" onclick="showTab('hasil-prediksi')">Hasil Prediksi</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Tab Beranda -->
+        <section id="beranda" class="tab-content active">
+            <h2>Tentang Samsung</h2>
+            <p>
+                Samsung Electronics adalah perusahaan elektronik asal Korea Selatan yang bergerak di bidang manufaktur dan penjualan barang elektronik dan periferal komputer.
+                Samsung Electronics merupakan salah satu produsen perangkat elektronik terbesar di dunia.
+            </p>
+            <img src="/static/images/samsung_image.jpg" alt="Samsung Electronics" class="beranda-image">
+            <h3>Divisi Bisnis</h3>
+            <p>
+                Samsung Electronics memiliki beberapa divisi bisnis, yaitu:
+            </p>
+            <ul>
+                <li>Elektronik Konsumen</li>
+                <li>Teknologi Informasi & Komunikasi Seluler</li>
+                <li>Solusi Perangkat</li>
+            </ul>
+            <h3>Sejarah</h3>
+            <p>
+                Samsung Electronics didirikan pada tahun 1938 oleh Lee Byung-chul, yang awalnya merupakan toko ritel kecil yang berfokus pada perdagangan dan ekspor.
+                Pada tahun 1969, Samsung memasuki industri elektronik dan mulai memproduksi berbagai macam barang elektronik konsumen dan industri.
+            </p>
+            <h3>Operasi di Indonesia</h3>
+            <p>
+                Di Indonesia, Samsung Electronics memiliki anak perusahaan bernama PT Samsung Electronics Indonesia (SEIN) yang berlokasi di Cikarang, Bekasi.
+                SEIN memproduksi berbagai produk elektronik, seperti smartphone, LED TV, STB, dan Blueray.
+            </p>
+        </section>
+        
+        <!-- Tab Data Samsung -->
+        <section id="data-samsung" class="tab-content">
+            <h2>Data Penjualan Samsung</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tahun</th>
+                        <th>Penjualan (juta unit)</th>
+                    </tr>
+                </thead>
+                <tbody id="sales-data"></tbody>
+            </table>
+        </section>
+
+        <!-- Tab Monte Carlo -->
+        <section id="monte-carlo" class="tab-content">
+            <h2>Monte Carlo</h2>
+            <p>
+                Simulasi Monte Carlo adalah teknik matematika yang menggunakan sampel acak secara berulang-ulang untuk memprediksi kemungkinan hasil dari suatu peristiwa yang tidak pasti.
+                Program komputer menggunakan metode ini untuk menganalisis data masa lalu dan memprediksi berbagai hasil di masa mendatang.
+            </p>
+            <h3>Penggunaan Simulasi Monte Carlo</h3>
+            <p>Simulasi Monte Carlo dapat digunakan dalam berbagai bidang, seperti:</p>
+            <ul>
+                <li>Memprediksi penjualan produk baru</li>
+                <li>Memprediksi permintaan tanaman hias</li>
+                <li>Mendeteksi kemacetan lalu lintas</li>
+                <li>Menyelidiki sifat magnetik</li>
+                <li>Mengukur risiko kerugian petani jagung</li>
+            </ul>
+            <h3>Rumus Monte Carlo</h3>
+            <pre>
+Hasil = Σ(Pi * Xi)
+Di mana:
+- Pi: Probabilitas dari data historis
+- Xi: Nilai penjualan aktual
+            </pre>
+        </section>
+
+        <!-- Tab Hasil Prediksi -->
+        <section id="hasil-prediksi" class="tab-content">
+            <h2>Hasil Prediksi Monte Carlo</h2>
+            
+            <!-- Tabel Interval Bilangan Random -->
+            <h3>Interval Bilangan Random</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Permintaan (juta unit)</th>
+                        <th>Interval Bilangan Random</th>
+                    </tr>
+                </thead>
+                <tbody id="interval-data"></tbody>
+            </table>
+
+            <!-- Tabel Hasil Simulasi -->
+            <h3>Hasil Simulasi</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nomor Acak</th>
+                        <th>Prediksi Penjualan (juta unit)</th>
+                    </tr>
+                </thead>
+                <tbody id="monte-carlo-data"></tbody>
+            </table>
+
+            <!-- Tambahkan Gambar -->
+            <h3>Grafik Hasil Prediksi</h3>
+            <img src="/static/images/grafik_image.jpg" alt="Grafik Hasil Prediksi" class="hasil-prediksi-image">
+        </section>
+    </main>
+    
+    <script src="/static/script.js"></script>
+</body>
+</html>
